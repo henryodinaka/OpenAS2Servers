@@ -22,10 +22,12 @@ public class Scheduler {
     }
 
     @Scheduled(cron = "0 0/1 * 1/1 * ?")
-    public void loadSwiftMessage() {
-        log.info("Running job to load new messages");
+    public void loadMDN() {
         var files = fileService.loadAllMDN();
-        log.info("Files return {}",files);
+    }
+    @Scheduled(cron = "0 0/1 * 1/1 * ?")
+    public void loadInbox() {
+        var files = fileService.loadInbox();
     }
 
 }

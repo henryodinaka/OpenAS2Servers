@@ -32,6 +32,11 @@ public class Response implements Serializable {
         this.data = data;
         this.httpCode = httpCode;
     }
+    public Response(int httpCode,String code, String status) {
+        this.code = ("200".equals(code) ? "00" : code);
+        this.status = status;
+        this.httpCode = httpCode;
+    }
     public Response(String code, String status, Object data) {
         this.code = ("200".equals(code) ? "00" : code);
         this.status = status;
