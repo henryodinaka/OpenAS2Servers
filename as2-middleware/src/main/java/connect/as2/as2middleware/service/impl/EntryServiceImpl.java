@@ -35,10 +35,6 @@ public class EntryServiceImpl implements EntryService {
 
         if (file == null)
             throw new APIException(new Response("16", "File to be uploaded cannot be null", null));
-        var originalFilename = file.getOriginalFilename();
-        var split = originalFilename.split("-");
-        if (split.length != 3)
-            throw new APIException(new Response("16", "Invalid file name. It must be in this format: MyCompany-YourCompany-TheEdiFileNameToBeSent.<file extension>", null));
         fileService.save(file);
         return new Response(200, "00", "File Dropped successfully", null);
     }
