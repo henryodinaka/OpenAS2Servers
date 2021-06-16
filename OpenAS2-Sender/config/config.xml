@@ -102,8 +102,8 @@
               mimetype="application/EDI-X12"/>
       <!-- This directory polling module will is dedicated to sending to partner PartnerA_OID -->
       <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-              outboxdir="$properties.storageBaseDir$/toMinCommerce/"
-              errordir="$properties.storageBaseDir$/toMinCommerce/error/$date.YYYY$/$date.MM$"
+              outboxdir="$properties.storageBaseDir$/toMin/"
+              errordir="$properties.storageBaseDir$/toMin/error/$date.YYYY$/$date.MM$"
               stored_error_filename="$date.YYYY$-$date.MM$-$msg.headers.message-id$-$msg.attributes.filename$"
               sentdir="$properties.storageBaseDir$/sent/$msg.sender.as2_id$-$msg.receiver.as2_id$/$date.YYYY$/$date.MM$"
               stored_sent_filename="$msg.headers.message-id$-$msg.attributes.filename$"
