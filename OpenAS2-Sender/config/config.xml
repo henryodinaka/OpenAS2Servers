@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openas2>
-   <properties storageBaseDir="C:/projects/conectar/as2/sender/data"
+	<properties storageBaseDir="%home%/../../sender/data"
                log_date_format="yyyy-MM-dd HH:mm:ss.SSS"
                sql_timestamp_format="yyyy-MM-dd HH:mm:ss.SSS"
                as2_message_id_format="OPENAS2-$date.yyyy-MM-dd$:$date.HH:mm:ss$-@$msg.sender.as2_id$:$msg.receiver.as2_id$"
@@ -26,7 +26,7 @@
                module.HealthCheckModule.enabled="false"
                />
    <certificates classname="org.openas2.cert.PKCS12CertificateFactory"
-                 filename="C:\projects\conectar\as2\certs\leo\as2_leo.p12"
+	   filename="%home%/../../certs/leo/as2_leo.p12"
                  password="2020Myyear1#"
                  interval="300"/>
    <partnerships classname="org.openas2.partner.XMLPartnershipFactory"
