@@ -1,0 +1,24 @@
+Headers:
+Date: Sun, 13 Jun 2021 06:24:53 +0100
+From: deleogold@gmail.com
+Message-ID: <OPENAS2-2021-06-13:06:24:53-@MinCommerce_OID:Leo_OID>
+Subject: Your Requested MDN Response re: File MinCommerce_OID-Leo_OID-board.jpg sent from MinCommerce to Leo
+Mime-Version: 1.0
+Content-Type: multipart/signed; protocol="application/pkcs7-signature"; micalg=sha-256;  boundary="----=_Part_1_706941366.1623561893371"
+AS2-To: MinCommerce_OID
+AS2-From: Leo_OID
+AS2-Version: 1.1
+Connection: close, TE
+User-Agent: OpenAS2 Server v2.11.0
+Server: OpenAS2 Server v2.11.0
+Content-Length: 2547
+
+Attributes:
+FINAL_RECIPIENT: rfc822; Leo_OID
+MIC: catEiiu42m90m0SVyBIiwECTYRBIocTtPEX6fLEbT3o=, SHA256
+REPORTING_UA: OpenAS2 Server v2.11.0@/127.0.0.1:10080
+ORIGINAL_MESSAGE_ID: <OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>
+ORIGINAL_RECIPIENT: rfc822; Leo_OID
+DISPOSITION: automatic-action/MDN-sent-automatically; processed
+Text:
+The message sent to Recipient Leo_OID on Sun, 13 Jun 2021 06:24:51 +0100 with Subject File MinCommerce_OID-Leo_OID-board.jpg sent from MinCommerce to Leo has been received, the EDI Interchange was successfully decrypted and it's integrity was verified. In addition, the sender of the message, Sender MinCommerce_OID at Location /127.0.0.1 was authenticated as the originator of the message. There is no guarantee however that the EDI Interchange was syntactically correct, or was received by the EDI application/translator.

@@ -1,0 +1,1041 @@
+2021-06-13 04:24:02.030 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:24:02.033 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:24:02.042 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:24:02.043 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 04:24:02.045 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 04:24:02.046 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 04:24:02.047 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 04:24:02.050 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:24:02.051 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 04:24:02.052 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 04:24:10.116 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 04:24:10.127 FINE XMLSession: Loading command processor(s)...
+2021-06-13 04:24:10.130 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 04:24:10.131 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 04:24:10.132 FINE XMLSession: Loading processor modules...
+2021-06-13 04:24:10.193 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:24:10.196 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:24:10.200 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 04:24:10.215 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 04:24:10.217 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 04:24:10.218 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:24:10.224 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:24:10.368 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 04:24:10.379 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 04:24:10.381 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 04:24:10.381 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 04:24:10.382 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 04:24:10.383 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 04:24:53.240 FINE AS2ReceiverHandler: received 2232366 bytes in 0.390 seconds at 5.469 MBps 127.0.0.1 55436 [<OPENAS2-2021-06-13.04:24:52-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:24:53.926 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13.042452-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:24:52-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:24:53.929 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13.042452-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:24:52-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:24:54.036 ERROR OpenAS2Exception: Error occurred:: null
+    Sources: {}
+org.openas2.processor.ProcessorException: null
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:24:54.040 ERROR OpenAS2Exception: Error occurred:: null
+    Sources: {}
+org.openas2.processor.ProcessorException: null
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:24:54.045 ERROR OpenAS2Exception: Error occurred:: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid key (missing closing $)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:130)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+    Sources: {message=Message From:{as2_id=Leo_OID, name=Leo, email=deleogold@gmail.com, x509_alias=as2_min_leo}To:{as2_id=MinCommerce_OID, name=MinCommerce, email=odinaka.onah@min.ng, x509_alias=as2_min}
+Headers:{Content-Type=application/EDI-X12, Content-Length=2232366, Date=Sun, 13 Jun 2021 04:24:52 +0100, From=deleogold@gmail.com, Message-ID=<OPENAS2-2021-06-13.04:24:52-@Leo_OID_MinCommerce_OID>, Subject=File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce, Mime-Version=1.0, Connection=close, TE, User-Agent=OpenAS2 Server v2.11.0 (AS2SenderModule), AS2-Version=1.1, Recipient-Address=http://localhost:10085, AS2-To=MinCommerce_OID, AS2-From=Leo_OID, Disposition-Notification-To=deleogold@gmail.com, Disposition-Notification-Options=signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, SHA256, Content-Disposition=Attachment; filename="Leo_OID-MinCommerce_OID-receipt.jpg", Transfer-Encoding=chunked, Host=localhost:10085, Accept-Encoding=gzip,deflate}
+Attributes:{HTTP_REQUEST_TYPE=POST, destination_ip=/127.0.0.1, destination_port=10085, HTTP_REQUEST_URL=/, source_port=55436, source_ip=/127.0.0.1}
+MDN:MDN From:{as2_id=MinCommerce_OID, name=MinCommerce, email=odinaka.onah@min.ng, x509_alias=as2_min}To:{as2_id=Leo_OID, name=Leo, email=deleogold@gmail.com, x509_alias=as2_min_leo}
+Headers:{Date=Sun, 13 Jun 2021 04:24:53 +0100, From=odinaka.onah@min.ng, Message-Id=<OPENAS2-13062021042453+0100-c6be6678-a769-4484-9e5c-5967f2a6d20a@Leo_OID_MinCommerce_OID>, Subject=Your Requested MDN Response re: File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce, MIME-Version=1.0, Content-Type=multipart/signed; protocol="application/pkcs7-signature"; micalg=sha-256;  boundary="----=_Part_1_491974163.1623554693986", AS2-To=Leo_OID, AS2-From=MinCommerce_OID, AS2-Version=1.1, Connection=close, TE, User-Agent=OpenAS2 Server v2.11.0, Server=OpenAS2 Server v2.11.0, Content-Length=2568}
+Attributes:{FINAL_RECIPIENT=rfc822; MinCommerce_OID, MIC=b8LjXHwRHAx07B7/xajKx881z4zGLPeE/bWQQfYdzmw=, SHA256, REPORTING_UA=OpenAS2 Server v2.11.0@/127.0.0.1:10085, ORIGINAL_MESSAGE_ID=<OPENAS2-2021-06-13.04:24:52-@Leo_OID_MinCommerce_OID>, ORIGINAL_RECIPIENT=rfc822; MinCommerce_OID, DISPOSITION=automatic-action/MDN-sent-automatically; processed}
+Text: 
+The message sent to Recipient MinCommerce_OID on Sun, 13 Jun 2021 04:24:52 +0100 with Subject File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce has been received, the EDI Interchange was successfully decrypted and it's integrity was verified. In addition, the sender of the message, Sender Leo_OID at Location /127.0.0.1 was authenticated as the originator of the message. There is no guarantee however that the EDI Interchange was syntactically correct, or was received by the EDI application/translator.
+}
+org.openas2.WrappedException: Error sending MDN
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:476)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openas2.processor.ProcessorException: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid key (missing closing $)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:130)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	... 5 more
+2021-06-13 04:24:54.048 ERROR AS2ReceiverHandler: Unexpected error occurred sending MDN: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid key (missing closing $)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:130)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ [<OPENAS2-2021-06-13.04:24:52-@Leo_OID_MinCommerce_OID>]
+org.openas2.processor.ProcessorException: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid key (missing closing $)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:130)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:24:54.049 WARNING AS2ReceiverHandler: Received message processed but MDN could not be sent for Message-ID: <OPENAS2-2021-06-13.04:24:52-@Leo_OID_MinCommerce_OID>
+2021-06-13 04:27:53.853 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:27:53.858 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:27:53.863 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:27:53.864 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 04:27:53.865 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 04:27:53.865 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 04:27:53.867 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 04:27:53.871 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:27:53.872 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 04:27:53.873 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 04:27:59.896 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 04:27:59.908 FINE XMLSession: Loading command processor(s)...
+2021-06-13 04:27:59.911 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 04:27:59.912 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 04:27:59.914 FINE XMLSession: Loading processor modules...
+2021-06-13 04:27:59.971 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:27:59.973 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:27:59.977 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 04:27:59.988 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 04:27:59.989 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 04:27:59.990 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:27:59.993 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:28:00.124 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 04:28:00.133 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 04:28:00.136 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 04:28:00.137 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 04:28:00.140 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 04:28:00.141 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 04:28:23.141 FINE AS2ReceiverHandler: received 2232366 bytes in 0.368 seconds at 5.804 MBps 127.0.0.1 54459 [<OPENAS2-2021-06-13.04:28:22-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:28:23.803 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13.042822-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:28:22-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:28:23.807 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13.042822-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:28:22-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:28:23.920 ERROR OpenAS2Exception: Error occurred:: null
+    Sources: {}
+org.openas2.processor.ProcessorException: null
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:28:23.923 ERROR OpenAS2Exception: Error occurred:: null
+    Sources: {}
+org.openas2.processor.ProcessorException: null
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:28:23.927 ERROR OpenAS2Exception: Error occurred:: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid parser identifier - Key/Value pair: txt/null
+	at org.openas2.params.CompositeParameters.getParameter(CompositeParameters.java:91)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:137)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+    Sources: {message=Message From:{as2_id=Leo_OID, name=Leo, email=deleogold@gmail.com, x509_alias=as2_min_leo}To:{as2_id=MinCommerce_OID, name=MinCommerce, email=odinaka.onah@min.ng, x509_alias=as2_min}
+Headers:{Content-Type=application/EDI-X12, Content-Length=2232366, Date=Sun, 13 Jun 2021 04:28:22 +0100, From=deleogold@gmail.com, Message-ID=<OPENAS2-2021-06-13.04:28:22-@Leo_OID_MinCommerce_OID>, Subject=File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce, Mime-Version=1.0, Connection=close, TE, User-Agent=OpenAS2 Server v2.11.0 (AS2SenderModule), AS2-Version=1.1, Recipient-Address=http://localhost:10085, AS2-To=MinCommerce_OID, AS2-From=Leo_OID, Disposition-Notification-To=deleogold@gmail.com, Disposition-Notification-Options=signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, SHA256, Content-Disposition=Attachment; filename="Leo_OID-MinCommerce_OID-receipt.jpg", Transfer-Encoding=chunked, Host=localhost:10085, Accept-Encoding=gzip,deflate}
+Attributes:{HTTP_REQUEST_TYPE=POST, destination_ip=/127.0.0.1, destination_port=10085, HTTP_REQUEST_URL=/, source_port=54459, source_ip=/127.0.0.1}
+MDN:MDN From:{as2_id=MinCommerce_OID, name=MinCommerce, email=odinaka.onah@min.ng, x509_alias=as2_min}To:{as2_id=Leo_OID, name=Leo, email=deleogold@gmail.com, x509_alias=as2_min_leo}
+Headers:{Date=Sun, 13 Jun 2021 04:28:23 +0100, From=odinaka.onah@min.ng, Message-Id=<OPENAS2-2021-06-13.04:28:23-@Leo_OID_MinCommerce_OID>, Subject=Your Requested MDN Response re: File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce, MIME-Version=1.0, Content-Type=multipart/signed; protocol="application/pkcs7-signature"; micalg=sha-256;  boundary="----=_Part_1_700903255.1623554903870", AS2-To=Leo_OID, AS2-From=MinCommerce_OID, AS2-Version=1.1, Connection=close, TE, User-Agent=OpenAS2 Server v2.11.0, Server=OpenAS2 Server v2.11.0, Content-Length=2572}
+Attributes:{FINAL_RECIPIENT=rfc822; MinCommerce_OID, MIC=b8LjXHwRHAx07B7/xajKx881z4zGLPeE/bWQQfYdzmw=, SHA256, REPORTING_UA=OpenAS2 Server v2.11.0@/127.0.0.1:10085, ORIGINAL_MESSAGE_ID=<OPENAS2-2021-06-13.04:28:22-@Leo_OID_MinCommerce_OID>, ORIGINAL_RECIPIENT=rfc822; MinCommerce_OID, DISPOSITION=automatic-action/MDN-sent-automatically; processed}
+Text: 
+The message sent to Recipient MinCommerce_OID on Sun, 13 Jun 2021 04:28:22 +0100 with Subject File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce has been received, the EDI Interchange was successfully decrypted and it's integrity was verified. In addition, the sender of the message, Sender Leo_OID at Location /127.0.0.1 was authenticated as the originator of the message. There is no guarantee however that the EDI Interchange was syntactically correct, or was received by the EDI application/translator.
+}
+org.openas2.WrappedException: Error sending MDN
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:476)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openas2.processor.ProcessorException: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid parser identifier - Key/Value pair: txt/null
+	at org.openas2.params.CompositeParameters.getParameter(CompositeParameters.java:91)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:137)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	... 5 more
+2021-06-13 04:28:23.931 ERROR AS2ReceiverHandler: Unexpected error occurred sending MDN: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid parser identifier - Key/Value pair: txt/null
+	at org.openas2.params.CompositeParameters.getParameter(CompositeParameters.java:91)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:137)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ [<OPENAS2-2021-06-13.04:28:22-@Leo_OID_MinCommerce_OID>]
+org.openas2.processor.ProcessorException: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid parser identifier - Key/Value pair: txt/null
+	at org.openas2.params.CompositeParameters.getParameter(CompositeParameters.java:91)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:137)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:28:23.939 WARNING AS2ReceiverHandler: Received message processed but MDN could not be sent for Message-ID: <OPENAS2-2021-06-13.04:28:22-@Leo_OID_MinCommerce_OID>
+2021-06-13 04:29:57.631 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:29:57.634 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:29:57.644 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:29:57.648 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 04:29:57.651 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 04:29:57.654 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 04:29:57.656 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 04:29:57.663 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:29:57.667 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 04:29:57.671 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 04:30:33.621 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 04:30:33.633 FINE XMLSession: Loading command processor(s)...
+2021-06-13 04:30:33.637 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 04:30:33.638 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 04:30:33.640 FINE XMLSession: Loading processor modules...
+2021-06-13 04:30:33.704 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:30:33.707 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:30:33.710 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 04:30:33.724 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 04:30:33.725 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 04:30:33.729 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:30:33.731 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:30:33.917 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 04:30:33.929 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 04:30:33.931 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 04:30:33.933 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 04:30:33.934 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 04:30:33.937 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 04:30:53.275 FINE AS2ReceiverHandler: received 2232366 bytes in 0.462 seconds at 4.622 MBps 127.0.0.1 52556 [<OPENAS2-2021-06-13.04:30:52-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:30:55.347 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13.043052-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:30:52-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:30:55.355 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13.043052-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:30:52-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:30:55.680 ERROR OpenAS2Exception: Error occurred:: null
+    Sources: {}
+org.openas2.processor.ProcessorException: null
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:30:55.684 ERROR OpenAS2Exception: Error occurred:: null
+    Sources: {}
+org.openas2.processor.ProcessorException: null
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:30:55.701 ERROR OpenAS2Exception: Error occurred:: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid parser identifier - Key/Value pair: txt/null
+	at org.openas2.params.CompositeParameters.getParameter(CompositeParameters.java:91)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:137)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+    Sources: {message=Message From:{as2_id=Leo_OID, name=Leo, email=deleogold@gmail.com, x509_alias=as2_min_leo}To:{as2_id=MinCommerce_OID, name=MinCommerce, email=odinaka.onah@min.ng, x509_alias=as2_min}
+Headers:{Content-Type=application/EDI-X12, Content-Length=2232366, Date=Sun, 13 Jun 2021 04:30:52 +0100, From=deleogold@gmail.com, Message-ID=<OPENAS2-2021-06-13.04:30:52-@Leo_OID_MinCommerce_OID>, Subject=File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce, Mime-Version=1.0, Connection=close, TE, User-Agent=OpenAS2 Server v2.11.0 (AS2SenderModule), AS2-Version=1.1, Recipient-Address=http://localhost:10085, AS2-To=MinCommerce_OID, AS2-From=Leo_OID, Disposition-Notification-To=deleogold@gmail.com, Disposition-Notification-Options=signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, SHA256, Content-Disposition=Attachment; filename="Leo_OID-MinCommerce_OID-receipt.jpg", Transfer-Encoding=chunked, Host=localhost:10085, Accept-Encoding=gzip,deflate}
+Attributes:{HTTP_REQUEST_TYPE=POST, destination_ip=/127.0.0.1, destination_port=10085, HTTP_REQUEST_URL=/, source_port=52556, source_ip=/127.0.0.1}
+MDN:MDN From:{as2_id=MinCommerce_OID, name=MinCommerce, email=odinaka.onah@min.ng, x509_alias=as2_min}To:{as2_id=Leo_OID, name=Leo, email=deleogold@gmail.com, x509_alias=as2_min_leo}
+Headers:{Date=Sun, 13 Jun 2021 04:30:55 +0100, From=odinaka.onah@min.ng, Message-Id=<OPENAS2-2021-06-13.04:30:55-@Leo_OID_MinCommerce_OID>, Subject=Your Requested MDN Response re: File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce, MIME-Version=1.0, Content-Type=multipart/signed; protocol="application/pkcs7-signature"; micalg=sha-256;  boundary="----=_Part_1_1540686760.1623555055549", AS2-To=Leo_OID, AS2-From=MinCommerce_OID, AS2-Version=1.1, Connection=close, TE, User-Agent=OpenAS2 Server v2.11.0, Server=OpenAS2 Server v2.11.0, Content-Length=2571}
+Attributes:{FINAL_RECIPIENT=rfc822; MinCommerce_OID, MIC=b8LjXHwRHAx07B7/xajKx881z4zGLPeE/bWQQfYdzmw=, SHA256, REPORTING_UA=OpenAS2 Server v2.11.0@/127.0.0.1:10085, ORIGINAL_MESSAGE_ID=<OPENAS2-2021-06-13.04:30:52-@Leo_OID_MinCommerce_OID>, ORIGINAL_RECIPIENT=rfc822; MinCommerce_OID, DISPOSITION=automatic-action/MDN-sent-automatically; processed}
+Text: 
+The message sent to Recipient MinCommerce_OID on Sun, 13 Jun 2021 04:30:52 +0100 with Subject File Leo_OID-MinCommerce_OID-receipt.jpg sent from Leo to MinCommerce has been received, the EDI Interchange was successfully decrypted and it's integrity was verified. In addition, the sender of the message, Sender Leo_OID at Location /127.0.0.1 was authenticated as the originator of the message. There is no guarantee however that the EDI Interchange was syntactically correct, or was received by the EDI application/translator.
+}
+org.openas2.WrappedException: Error sending MDN
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:476)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openas2.processor.ProcessorException: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid parser identifier - Key/Value pair: txt/null
+	at org.openas2.params.CompositeParameters.getParameter(CompositeParameters.java:91)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:137)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	... 5 more
+2021-06-13 04:30:55.715 ERROR AS2ReceiverHandler: Unexpected error occurred sending MDN: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid parser identifier - Key/Value pair: txt/null
+	at org.openas2.params.CompositeParameters.getParameter(CompositeParameters.java:91)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:137)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ [<OPENAS2-2021-06-13.04:30:52-@Leo_OID_MinCommerce_OID>]
+org.openas2.processor.ProcessorException: null
+org.openas2.processor.ProcessorException: null
+org.openas2.params.InvalidParameterException: Invalid parser identifier - Key/Value pair: txt/null
+	at org.openas2.params.CompositeParameters.getParameter(CompositeParameters.java:91)
+	at org.openas2.params.ParameterParser.format(ParameterParser.java:137)
+	at org.openas2.params.ParameterParser.parse(ParameterParser.java:98)
+	at org.openas2.processor.storage.MDNFileModule.getFilename(MDNFileModule.java:51)
+	at org.openas2.processor.storage.BaseStorageModule.getFile(BaseStorageModule.java:76)
+	at org.openas2.processor.storage.MDNFileModule.handle(MDNFileModule.java:31)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.sender.MDNSenderModule.handle(MDNSenderModule.java:106)
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:55)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+	at org.openas2.processor.DefaultProcessor.handle(DefaultProcessor.java:58)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:469)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:241)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-13 04:30:55.717 WARNING AS2ReceiverHandler: Received message processed but MDN could not be sent for Message-ID: <OPENAS2-2021-06-13.04:30:52-@Leo_OID_MinCommerce_OID>
+2021-06-13 04:33:25.110 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:33:25.112 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:33:25.120 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:33:25.124 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 04:33:25.126 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 04:33:25.128 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 04:33:25.131 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 04:33:25.138 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:33:25.142 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 04:33:25.145 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 04:33:35.483 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 04:33:35.495 FINE XMLSession: Loading command processor(s)...
+2021-06-13 04:33:35.498 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 04:33:35.499 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 04:33:35.501 FINE XMLSession: Loading processor modules...
+2021-06-13 04:33:35.562 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:33:35.564 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:33:35.566 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 04:33:35.579 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 04:33:35.580 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 04:33:35.581 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:33:35.582 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:33:35.732 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 04:33:35.743 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 04:33:35.745 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 04:33:35.746 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 04:33:35.747 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 04:33:35.747 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 04:33:48.227 FINE AS2ReceiverHandler: received 2232366 bytes in 0.445 seconds at 4.802 MBps 127.0.0.1 52567 [<OPENAS2-2021-06-13.04:33:47-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:33:50.290 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13.043347-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:33:47-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:33:50.296 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13.043347-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:33:47-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:33:50.628 FINE MDNSenderModule: sent MDN [automatic-action/mdn-sent-automatically; processed] [<OPENAS2-2021-06-13.04:33:47-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:33:50.629 FINE AS2ReceiverHandler: Sent MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13.04:33:47-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:35:56.402 FINE AS2ReceiverHandler: received 2232366 bytes in 0.954 seconds at 2.237 MBps 127.0.0.1 53547 [<OPENAS2-2021-06-13.04:35:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:35:56.606 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13.043553-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:35:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:35:56.609 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13.043553-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:35:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:35:56.648 FINE MDNSenderModule: sent MDN [automatic-action/mdn-sent-automatically; processed] [<OPENAS2-2021-06-13.04:35:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:35:56.649 FINE AS2ReceiverHandler: Sent MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13.04:35:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:37:22.040 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:37:22.042 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:37:22.047 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:37:22.048 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 04:37:22.049 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 04:37:22.050 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 04:37:22.052 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 04:37:22.055 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:37:22.057 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 04:37:22.060 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 04:37:25.856 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 04:37:25.871 FINE XMLSession: Loading command processor(s)...
+2021-06-13 04:37:25.875 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 04:37:25.877 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 04:37:25.878 FINE XMLSession: Loading processor modules...
+2021-06-13 04:37:25.936 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:37:25.937 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:37:25.942 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 04:37:25.954 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 04:37:25.955 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 04:37:25.959 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:37:25.961 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:37:26.119 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 04:37:26.130 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 04:37:26.132 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 04:37:26.133 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 04:37:26.133 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 04:37:26.134 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 04:37:54.171 FINE AS2ReceiverHandler: received 2232358 bytes in 0.695 seconds at 3.64 MBps 127.0.0.1 53553 [<OPENAS2-2021-06-13.04:37:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:37:54.972 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13.043753-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:37:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:37:54.977 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13.043753-@Leo_OID_MinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13.04:37:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:37:55.106 FINE MDNSenderModule: sent MDN [automatic-action/mdn-sent-automatically; processed] [<OPENAS2-2021-06-13.04:37:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:37:55.107 FINE AS2ReceiverHandler: Sent MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13.04:37:53-@Leo_OID_MinCommerce_OID>]
+2021-06-13 04:44:35.429 FINE AS2ReceiverHandler: received 2232366 bytes in 0.890 seconds at 2.401 MBps 127.0.0.1 63298 [<OPENAS2-2021-06-13:04:44:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:44:35.653 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13044432-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:04:44:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:44:35.655 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13044432-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:04:44:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:44:35.694 FINE MDNSenderModule: sent MDN [automatic-action/mdn-sent-automatically; processed] [<OPENAS2-2021-06-13:04:44:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:44:35.696 FINE AS2ReceiverHandler: Sent MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13:04:44:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:45:33.398 FINE AS2ReceiverHandler: received 2232366 bytes in 0.850 seconds at 2.516 MBps 127.0.0.1 63303 [<OPENAS2-2021-06-13:04:45:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:45:33.608 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13044532-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:04:45:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:45:33.610 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13044532-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:04:45:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:45:33.646 FINE MDNSenderModule: sent MDN [automatic-action/mdn-sent-automatically; processed] [<OPENAS2-2021-06-13:04:45:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:45:33.652 FINE AS2ReceiverHandler: Sent MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13:04:45:32-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:45:57.502 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:45:57.506 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 04:45:57.515 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:45:57.519 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 04:45:57.522 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 04:45:57.524 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 04:45:57.528 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 04:45:57.537 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 04:45:57.538 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 04:45:57.541 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 04:46:02.467 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 04:46:02.479 FINE XMLSession: Loading command processor(s)...
+2021-06-13 04:46:02.483 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 04:46:02.484 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 04:46:02.487 FINE XMLSession: Loading processor modules...
+2021-06-13 04:46:02.545 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:46:02.547 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 04:46:02.551 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 04:46:02.563 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 04:46:02.564 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 04:46:02.565 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:46:02.569 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 04:46:02.723 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 04:46:02.733 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 04:46:02.735 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 04:46:02.737 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 04:46:02.737 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 04:46:02.741 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 04:46:18.795 FINE AS2ReceiverHandler: received 2232366 bytes in 1.108 seconds at 1.943 MBps 127.0.0.1 63305 [<OPENAS2-2021-06-13:04:46:17-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:46:20.789 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13044617-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:04:46:17-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:46:20.794 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13044617-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:04:46:17-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:46:21.168 FINE MDNSenderModule: sent MDN [automatic-action/mdn-sent-automatically; processed] [<OPENAS2-2021-06-13:04:46:17-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:46:21.173 FINE AS2ReceiverHandler: Sent MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13:04:46:17-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:46:47.579 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\toAny
+2021-06-13 04:46:47.585 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\toLeo
+2021-06-13 04:47:02.743 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\resend
+2021-06-13 04:48:03.781 FINE AS2ReceiverHandler: received 2232366 bytes in 0.873 seconds at 2.449 MBps 127.0.0.1 61394 [<OPENAS2-2021-06-13:04:48:00-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:48:04.011 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\temp
+2021-06-13 04:48:04.018 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\inbox\OPENAS2-2021-06-13044800-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:04:48:00-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:48:04.021 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\Leo_OID-MinCommerce_OID\msgheaders\2021-06-13\OPENAS2-2021-06-13044800-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:04:48:00-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:48:04.061 FINE MDNSenderModule: sent MDN [automatic-action/mdn-sent-automatically; processed] [<OPENAS2-2021-06-13:04:48:00-@Leo_OID:MinCommerce_OID>]
+2021-06-13 04:48:04.063 FINE AS2ReceiverHandler: Sent MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13:04:48:00-@Leo_OID:MinCommerce_OID>]
+2021-06-13 05:05:02.571 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\pendinginfoMDN3
+2021-06-13 05:54:17.576 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 05:54:17.593 ERROR OpenAS2Exception: Error occurred:: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13.055417-@MinCommerce_OID_Leo_OID (The system cannot find the path specified)
+    Sources: {}
+org.openas2.OpenAS2Exception: Could not create file in pending folder: C:\projects\conectar\as2\receiver\data/pendingMDN3/OPENAS2-2021-06-13.055417-@MinCommerce_OID_Leo_OID
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:72)
+	at org.openas2.processor.receiver.DirectoryPollingModule.processFile(DirectoryPollingModule.java:192)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:165)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+Caused by: java.io.FileNotFoundException: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13.055417-@MinCommerce_OID_Leo_OID (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:70)
+	... 6 more
+2021-06-13 05:54:17.594 ERROR DirectoryPollingModule: Unexpected error occurred polling directory for files to send: C:\projects\conectar\as2\receiver\data/toLeo/
+java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at org.openas2.util.IOUtil.getDirectoryFile(IOUtil.java:48)
+	at org.openas2.util.IOUtil.handleError(IOUtil.java:119)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:169)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+2021-06-13 05:54:27.575 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 05:54:27.593 ERROR OpenAS2Exception: Error occurred:: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13.055427-@MinCommerce_OID_Leo_OID (The system cannot find the path specified)
+    Sources: {}
+org.openas2.OpenAS2Exception: Could not create file in pending folder: C:\projects\conectar\as2\receiver\data/pendingMDN3/OPENAS2-2021-06-13.055427-@MinCommerce_OID_Leo_OID
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:72)
+	at org.openas2.processor.receiver.DirectoryPollingModule.processFile(DirectoryPollingModule.java:192)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:165)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+Caused by: java.io.FileNotFoundException: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13.055427-@MinCommerce_OID_Leo_OID (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:70)
+	... 6 more
+2021-06-13 05:54:27.603 ERROR DirectoryPollingModule: Unexpected error occurred polling directory for files to send: C:\projects\conectar\as2\receiver\data/toLeo/
+java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at org.openas2.util.IOUtil.getDirectoryFile(IOUtil.java:48)
+	at org.openas2.util.IOUtil.handleError(IOUtil.java:119)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:169)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+2021-06-13 05:54:37.567 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 05:54:37.573 ERROR OpenAS2Exception: Error occurred:: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13.055437-@MinCommerce_OID_Leo_OID (The system cannot find the path specified)
+    Sources: {}
+org.openas2.OpenAS2Exception: Could not create file in pending folder: C:\projects\conectar\as2\receiver\data/pendingMDN3/OPENAS2-2021-06-13.055437-@MinCommerce_OID_Leo_OID
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:72)
+	at org.openas2.processor.receiver.DirectoryPollingModule.processFile(DirectoryPollingModule.java:192)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:165)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+Caused by: java.io.FileNotFoundException: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13.055437-@MinCommerce_OID_Leo_OID (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:70)
+	... 6 more
+2021-06-13 05:54:37.575 ERROR DirectoryPollingModule: Unexpected error occurred polling directory for files to send: C:\projects\conectar\as2\receiver\data/toLeo/
+java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at org.openas2.util.IOUtil.getDirectoryFile(IOUtil.java:48)
+	at org.openas2.util.IOUtil.handleError(IOUtil.java:119)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:169)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+2021-06-13 05:54:47.579 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 05:54:47.590 ERROR OpenAS2Exception: Error occurred:: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13.055447-@MinCommerce_OID_Leo_OID (The system cannot find the path specified)
+    Sources: {}
+org.openas2.OpenAS2Exception: Could not create file in pending folder: C:\projects\conectar\as2\receiver\data/pendingMDN3/OPENAS2-2021-06-13.055447-@MinCommerce_OID_Leo_OID
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:72)
+	at org.openas2.processor.receiver.DirectoryPollingModule.processFile(DirectoryPollingModule.java:192)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:165)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+Caused by: java.io.FileNotFoundException: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13.055447-@MinCommerce_OID_Leo_OID (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:70)
+	... 6 more
+2021-06-13 05:54:47.597 ERROR DirectoryPollingModule: Unexpected error occurred polling directory for files to send: C:\projects\conectar\as2\receiver\data/toLeo/
+java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at org.openas2.util.IOUtil.getDirectoryFile(IOUtil.java:48)
+	at org.openas2.util.IOUtil.handleError(IOUtil.java:119)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:169)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+2021-06-13 05:54:48.735 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 05:54:48.738 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 05:54:48.743 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 05:54:48.744 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 05:54:48.745 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 05:54:48.746 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 05:54:48.746 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 05:54:48.748 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 05:54:48.750 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 05:54:48.750 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 06:01:07.466 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 06:01:07.480 FINE XMLSession: Loading command processor(s)...
+2021-06-13 06:01:07.483 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 06:01:07.484 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 06:01:07.487 FINE XMLSession: Loading processor modules...
+2021-06-13 06:01:07.499 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\pendingMDN3
+2021-06-13 06:01:07.550 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 06:01:07.552 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 06:01:07.556 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 06:01:07.568 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 06:01:07.569 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 06:01:07.571 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 06:01:07.575 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 06:01:07.739 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 06:01:07.750 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 06:01:07.752 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 06:01:07.755 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 06:01:07.755 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 06:01:07.756 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 06:01:12.589 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 06:01:12.661 FINE MessageBuilderModule: File assigned to message: MinCommerce_OID-Leo_OID-board.jpg [<OPENAS2-2021-06-13:06:01:12-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:01:12.662 FINE AS2SenderModule: message sender invoked [<OPENAS2-2021-06-13:06:01:12-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:01:13.303 FINE AS2SenderModule: Save Original mic & message id information into file: C:/projects/conectar/as2/receiver/data/pendinginfoMDN3/OPENAS2-2021-06-13060112-@MinCommerce_OIDLeo_OID [<OPENAS2-2021-06-13:06:01:12-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:01:13.400 FINE AS2SenderModule: Connecting to: http://localhost:10080 [<OPENAS2-2021-06-13:06:01:12-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:01:14.468 FINE AS2SenderModule: Message sent and response received in 938 millisecondsms [<OPENAS2-2021-06-13:06:01:12-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:01:14.500 FINE AS2Util: received MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13:06:01:12-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:01:14.508 FINE AS2Util: Message sent and MDN received successfully. [<OPENAS2-2021-06-13:06:01:12-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:01:14.512 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\MinCommerce_OID-Leo_OID\sent\2021\06
+2021-06-13 06:01:14.513 FINE AS2Util: moved C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13060112-@MinCommerce_OIDLeo_OID to C:\projects\conectar\as2\receiver\data\MinCommerce_OID-Leo_OID\sent\2021\06\OPENAS2-2021-06-13060112-@MinCommerce_OIDLeo_OID-MinCommerce_OID-Leo_OID-board.jpg [<OPENAS2-2021-06-13:06:01:12-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:08:32.589 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 06:08:32.653 FINE MessageBuilderModule: File assigned to message: MinCommerce_OID-Leo_OID-board.jpg [<OPENAS2-2021-06-13:06:08:32-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:08:32.658 FINE AS2SenderModule: message sender invoked [<OPENAS2-2021-06-13:06:08:32-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:08:32.814 FINE AS2SenderModule: Save Original mic & message id information into file: C:/projects/conectar/as2/receiver/data/pendinginfoMDN3/OPENAS2-2021-06-13060832-@MinCommerce_OIDLeo_OID [<OPENAS2-2021-06-13:06:08:32-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:08:32.818 FINE AS2SenderModule: Connecting to: http://localhost:10080 [<OPENAS2-2021-06-13:06:08:32-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:08:35.745 FINE AS2SenderModule: Message sent and response received in 2921 millisecondsms [<OPENAS2-2021-06-13:06:08:32-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:08:35.755 FINE AS2Util: received MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13:06:08:32-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:08:35.761 FINE AS2Util: Message sent and MDN received successfully. [<OPENAS2-2021-06-13:06:08:32-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:08:35.765 FINE AS2Util: moved C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13060832-@MinCommerce_OIDLeo_OID to C:\projects\conectar\as2\receiver\data\MinCommerce_OID-Leo_OID\sent\2021\06\OPENAS2-2021-06-13060832-@MinCommerce_OIDLeo_OID-MinCommerce_OID-Leo_OID-board.jpg [<OPENAS2-2021-06-13:06:08:32-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:21:06.501 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 06:21:06.503 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 06:21:06.506 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 06:21:06.507 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 06:21:06.508 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 06:21:06.509 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 06:21:06.510 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 06:21:06.511 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 06:21:06.512 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 06:21:06.513 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 06:21:12.272 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 06:21:12.292 FINE XMLSession: Loading command processor(s)...
+2021-06-13 06:21:12.298 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 06:21:12.299 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 06:21:12.304 FINE XMLSession: Loading processor modules...
+2021-06-13 06:21:12.391 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 06:21:12.394 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 06:21:12.399 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 06:21:12.414 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 06:21:12.415 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 06:21:12.418 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 06:21:12.422 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 06:21:12.578 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 06:21:12.587 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 06:21:12.589 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 06:21:12.591 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 06:21:12.593 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 06:21:12.593 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 06:22:07.431 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\toAny
+2021-06-13 06:22:07.439 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\toLeo
+2021-06-13 06:22:12.608 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\resend
+2021-06-13 06:22:47.419 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\toAny
+2021-06-13 06:22:47.434 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\toLeo
+2021-06-13 06:23:12.428 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 06:23:12.441 ERROR OpenAS2Exception: Error occurred:: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13062312-@MinCommerce_OIDLeo_OID (The system cannot find the path specified)
+    Sources: {}
+org.openas2.OpenAS2Exception: Could not create file in pending folder: C:/projects/conectar/as2/receiver/data/pendingMDN3/OPENAS2-2021-06-13062312-@MinCommerce_OIDLeo_OID
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:72)
+	at org.openas2.processor.receiver.DirectoryPollingModule.processFile(DirectoryPollingModule.java:192)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:165)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+Caused by: java.io.FileNotFoundException: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13062312-@MinCommerce_OIDLeo_OID (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:70)
+	... 6 more
+2021-06-13 06:23:12.442 ERROR DirectoryPollingModule: Unexpected error occurred polling directory for files to send: C:/projects/conectar/as2/receiver/data/toLeo/
+java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at org.openas2.util.IOUtil.getDirectoryFile(IOUtil.java:48)
+	at org.openas2.util.IOUtil.handleError(IOUtil.java:119)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:169)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+2021-06-13 06:23:12.605 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\resend
+2021-06-13 06:23:22.437 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 06:23:22.448 ERROR OpenAS2Exception: Error occurred:: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13062322-@MinCommerce_OIDLeo_OID (The system cannot find the path specified)
+    Sources: {}
+org.openas2.OpenAS2Exception: Could not create file in pending folder: C:/projects/conectar/as2/receiver/data/pendingMDN3/OPENAS2-2021-06-13062322-@MinCommerce_OIDLeo_OID
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:72)
+	at org.openas2.processor.receiver.DirectoryPollingModule.processFile(DirectoryPollingModule.java:192)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:165)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+Caused by: java.io.FileNotFoundException: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13062322-@MinCommerce_OIDLeo_OID (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:70)
+	... 6 more
+2021-06-13 06:23:22.461 ERROR DirectoryPollingModule: Unexpected error occurred polling directory for files to send: C:/projects/conectar/as2/receiver/data/toLeo/
+java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at org.openas2.util.IOUtil.getDirectoryFile(IOUtil.java:48)
+	at org.openas2.util.IOUtil.handleError(IOUtil.java:119)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:169)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+2021-06-13 06:23:32.427 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 06:23:32.436 ERROR OpenAS2Exception: Error occurred:: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13062332-@MinCommerce_OIDLeo_OID (The system cannot find the path specified)
+    Sources: {}
+org.openas2.OpenAS2Exception: Could not create file in pending folder: C:/projects/conectar/as2/receiver/data/pendingMDN3/OPENAS2-2021-06-13062332-@MinCommerce_OIDLeo_OID
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:72)
+	at org.openas2.processor.receiver.DirectoryPollingModule.processFile(DirectoryPollingModule.java:192)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:165)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+Caused by: java.io.FileNotFoundException: C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13062332-@MinCommerce_OIDLeo_OID (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.openas2.processor.receiver.MessageBuilderModule.processDocument(MessageBuilderModule.java:70)
+	... 6 more
+2021-06-13 06:23:32.438 ERROR DirectoryPollingModule: Unexpected error occurred polling directory for files to send: C:/projects/conectar/as2/receiver/data/toLeo/
+java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at org.openas2.util.IOUtil.getDirectoryFile(IOUtil.java:48)
+	at org.openas2.util.IOUtil.handleError(IOUtil.java:119)
+	at org.openas2.processor.receiver.DirectoryPollingModule.updateTracking(DirectoryPollingModule.java:169)
+	at org.openas2.processor.receiver.DirectoryPollingModule.poll(DirectoryPollingModule.java:78)
+	at org.openas2.processor.receiver.PollingModule$PollTask.run(PollingModule.java:52)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+2021-06-13 06:23:33.530 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 06:23:33.536 FINE DefaultProcessor: AS2DirectoryPollingModule stopped.
+2021-06-13 06:23:33.540 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 06:23:33.541 FINE DefaultProcessor: AS2ReceiverModule stopped.
+2021-06-13 06:23:33.541 FINE DefaultProcessor: AS2MDNReceiverModule stopped.
+2021-06-13 06:23:33.542 FINE DefaultProcessor: DirectoryResenderModule stopped.
+2021-06-13 06:23:33.542 FINE DefaultProcessor: 6 active module(s) stopped.
+2021-06-13 06:23:33.545 FINE DefaultProcessor: DbTrackingModule stopped.
+2021-06-13 06:23:33.546 FINE DefaultProcessor: 1 active module(s) stopped.
+2021-06-13 06:23:33.548 FINE OpenAS2Server: OpenAS2 has shut down
+
+2021-06-13 06:24:46.214 FINE XMLSession: Logger is disabled ... ignoring: org.openas2.logging.SocketLogger
+2021-06-13 06:24:46.225 FINE XMLSession: Loading command processor(s)...
+2021-06-13 06:24:46.230 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.SocketCommandProcessor
+2021-06-13 06:24:46.231 FINE XMLSession: Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+2021-06-13 06:24:46.233 FINE XMLSession: Loading processor modules...
+2021-06-13 06:24:46.244 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\pendinginfoMDN3
+2021-06-13 06:24:46.245 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\pendingMDN3
+2021-06-13 06:24:46.292 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 06:24:46.295 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+2021-06-13 06:24:46.298 FINE XMLSession: Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+2021-06-13 06:24:46.309 FINE OpenAS2Server: Shutdown hook registered.
+2021-06-13 06:24:46.310 FINE OpenAS2Server: Starting OpenAS2 Server v2.11.0...
+2021-06-13 06:24:46.314 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 06:24:46.319 FINE DefaultProcessor: AS2DirectoryPollingModule started.
+2021-06-13 06:24:46.448 FINE DefaultProcessor: DbTrackingModule started.
+2021-06-13 06:24:46.458 FINE DefaultProcessor: AS2ReceiverModule started.
+2021-06-13 06:24:46.459 FINE DefaultProcessor: AS2MDNReceiverModule started.
+2021-06-13 06:24:46.462 FINE DefaultProcessor: DirectoryResenderModule started.
+2021-06-13 06:24:46.466 FINE DefaultProcessor: 6 active module(s) started.
+2021-06-13 06:24:46.467 FINE OpenAS2Server: OpenAS2 Server v2.11.0 started.
+2021-06-13 06:24:51.321 FINE DirectoryPollingModule: processing C:\projects\conectar\as2\receiver\data\toLeo\MinCommerce_OID-Leo_OID-board.jpg
+2021-06-13 06:24:51.363 FINE MessageBuilderModule: File assigned to message: MinCommerce_OID-Leo_OID-board.jpg [<OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:24:51.365 FINE AS2SenderModule: message sender invoked [<OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:24:51.931 FINE AS2SenderModule: Save Original mic & message id information into file: C:/projects/conectar/as2/receiver/data/pendinginfoMDN3/OPENAS2-2021-06-13062451-@MinCommerce_OIDLeo_OID [<OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:24:52.003 FINE AS2SenderModule: Connecting to: http://localhost:10080 [<OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:24:53.416 FINE AS2SenderModule: Message sent and response received in 1318 millisecondsms [<OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:24:53.445 FINE AS2Util: received MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:24:53.452 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\temp
+2021-06-13 06:24:53.455 FINE AS2Util: Message sent and MDN received successfully. [<OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:24:53.460 FINE IOUtil: Created directory C:\projects\conectar\as2\receiver\data\sent\MinCommerce_OID-Leo_OID\2021\06
+2021-06-13 06:24:53.461 FINE AS2Util: moved C:\projects\conectar\as2\receiver\data\pendingMDN3\OPENAS2-2021-06-13062451-@MinCommerce_OIDLeo_OID to C:\projects\conectar\as2\receiver\data\sent\MinCommerce_OID-Leo_OID\2021\06\OPENAS2-2021-06-13062451-@MinCommerce_OIDLeo_OID-MinCommerce_OID-Leo_OID-board.jpg [<OPENAS2-2021-06-13:06:24:51-@MinCommerce_OID:Leo_OID>]
+2021-06-13 06:25:29.529 FINE AS2ReceiverHandler: received 2232366 bytes in 0.413 seconds at 5.158 MBps 127.0.0.1 64460 [<OPENAS2-2021-06-13:06:25:28-@Leo_OID:MinCommerce_OID>]
+2021-06-13 06:25:29.757 FINE MessageFileModule: stored message to C:\projects\conectar\as2\receiver\data\inbox\Leo_OID-MinCommerce_OID\OPENAS2-2021-06-13062528-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:06:25:28-@Leo_OID:MinCommerce_OID>]
+2021-06-13 06:25:29.761 FINE MessageFileModule: stored headers to C:\projects\conectar\as2\receiver\data\msgheaders\Leo_OID-MinCommerce_OID\2021-06-13\OPENAS2-2021-06-13062528-@Leo_OIDMinCommerce_OID-Leo_OID-MinCommerce_OID-receipt.jpg [<OPENAS2-2021-06-13:06:25:28-@Leo_OID:MinCommerce_OID>]
+2021-06-13 06:25:29.803 FINE MDNSenderModule: sent MDN [automatic-action/mdn-sent-automatically; processed] [<OPENAS2-2021-06-13:06:25:28-@Leo_OID:MinCommerce_OID>]
+2021-06-13 06:25:29.804 FINE AS2ReceiverHandler: Sent MDN [automatic-action/MDN-sent-automatically; processed] [<OPENAS2-2021-06-13:06:25:28-@Leo_OID:MinCommerce_OID>]
