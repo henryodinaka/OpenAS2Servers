@@ -51,7 +51,7 @@
               bodytemplate="%home%/emailtemplate.txt"/>
       <logger classname="org.openas2.logging.FileLogger"
               enabled="$properties.file.logger.enabled$"
-              filename="%home%/../logs/log-$date.yyyyMMdd$.txt"/>
+              filename="$properties.storageBaseDir$/logs/$date.yyyy-MM-dd$.txt"/>
       <logger classname="org.openas2.logging.SocketLogger"
               enabled="$properties.socket.logger.enabled$"
               ipaddr="127.0.0.1"
