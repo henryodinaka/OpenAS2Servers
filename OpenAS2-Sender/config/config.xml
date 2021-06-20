@@ -108,7 +108,7 @@
               sentdir="$properties.storageBaseDir$/sent/$msg.sender.as2_id$-$msg.receiver.as2_id$/$date.YYYY$/$date.MM$"
               stored_sent_filename="$msg.headers.message-id$-$msg.attributes.filename$"
               interval="5"
-              defaults="sender.as2_id=Leo_OID, receiver.as2_id=MinCommerce_OID"
+              defaults="sender.as2_id=Leo, receiver.as2_id=MinCommerce"
               sendfilename="true"
               mimetype="application/EDI-X12"/>
       <!-- This directory polling module will is dedicated to sending to partner PartnerB_OID -->

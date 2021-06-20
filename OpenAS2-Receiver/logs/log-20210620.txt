@@ -123,3 +123,6 @@
 2021-06-20 14:01:23.077 FINE AS2Util: Message sent and MDN received successfully. [<OPENAS2-2021-06-20:14:01:22-@MinCommerce:Leo>]
 2021-06-20 14:01:23.081 FINE IOUtil: Created directory C:\projects\conectar\as2\OpenAS2-Receiver\bin\..\config\..\..\receiver\data\sent\MinCommerce-Leo\2021\06
 2021-06-20 14:01:23.089 FINE AS2Util: moved C:\projects\conectar\as2\OpenAS2-Receiver\bin\..\config\..\..\receiver\data\pendingMDN3\OPENAS2-2021-06-20140122-@MinCommerceLeo to C:\projects\conectar\as2\OpenAS2-Receiver\bin\..\config\..\..\receiver\data\sent\MinCommerce-Leo\2021\06\OPENAS2-2021-06-20140122-@MinCommerceLeo-final-image.PNG [<OPENAS2-2021-06-20:14:01:22-@MinCommerce:Leo>]
+2021-06-20 14:06:57.650 FINE IOUtil: Created directory C:\projects\conectar\as2\OpenAS2-Receiver\bin\..\config\..\..\receiver\data\toAny
+2021-06-20 14:06:57.662 FINE IOUtil: Created directory C:\projects\conectar\as2\OpenAS2-Receiver\bin\..\config\..\..\receiver\data\toLeo
+2021-06-20 14:07:17.799 FINE IOUtil: Created directory C:\projects\conectar\as2\OpenAS2-Receiver\bin\..\config\..\..\receiver\data\resend
