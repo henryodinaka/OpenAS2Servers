@@ -1,11 +1,11 @@
 <partnerships>
     <partner name="MinCommerce"
-             as2_id="MinCommerce_OID"
+             as2_id="MinCommerce"
              x509_alias="as2_min"
              email="odinaka.onah@min.ng"/>
 
     <partner name="Leo"
-             as2_id="Leo_OID"
+             as2_id="Leo"
              x509_alias="as2_min_leo"
              email="deleogold@gmail.com"/>
 
