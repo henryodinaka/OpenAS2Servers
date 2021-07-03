@@ -1,0 +1,37 @@
+<partnerships>
+    <partner name="Sisunet"
+             as2_id="SISUNET_AS2_PROD"
+             x509_alias="sisunet"
+             email="deleogold@gmail.com"/>
+
+    <partner name="Seeburger"
+             as2_id="MSAT_AS2_PROD"
+             x509_alias="seeburger_pub"
+             email="deleogold@gmail.com"/>
+
+    <partnership name="Sisunet-to-Seeburger">
+        <sender name="Sisunet"/>
+        <receiver name="Seeburger"/>
+        <attribute name="protocol" value="as2"/>
+        <attribute name="content_transfer_encoding" value="binary"/>
+        <attribute name="compression_type" value="ZLIB"/>
+        <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
+        <attribute name="as2_url" value="http://localhost:10085"/>
+        <attribute name="as2_mdn_to" value="deleogold@gmail.com"/>
+        <attribute name="as2_mdn_options"
+                   value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
+
+        <attribute name="encrypt" value="3DES"/>
+        <attribute name="sign" value="SHA256"/>
+        <attribute name="resend_max_retries" value="3"/>
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+        <attribute name="rename_digest_to_old_name" value="false"/>
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+
+    </partnership>
+    <partnership name="Seeburger-to-Sisunet">
+        <sender name="Seeburger"/>
+        <receiver name="Sisunet"/>
+    </partnership>
+
+</partnerships>

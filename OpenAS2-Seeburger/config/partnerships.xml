@@ -1,0 +1,39 @@
+<partnerships>
+    <partner name="Seeburger"
+             as2_id="MSAT_AS2_PROD"
+             x509_alias="seeburger"
+             email="deleogold@gmail.com"/>
+
+    <partner name="Sisunet"
+             as2_id="SISUNET_AS2_PROD"
+             x509_alias="sisunet_pub"
+             email="deleogold@gmail.com"/>
+
+    <partnership name="Seeburger-to-Sisunet">
+        <sender name="Seeburger"/>
+        <receiver name="Sisunet"/>
+        <attribute name="protocol" value="as2"/>
+        <attribute name="content_transfer_encoding" value="binary"/>
+        <attribute name="compression_type" value="ZLIB"/>
+        <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
+        <attribute name="as2_url" value="http://localhost:10080"/>
+        <attribute name="as2_mdn_to" value="deleogold@gmail.com"/>
+        <attribute name="as2_mdn_options"
+                   value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
+        <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
+              Example below uses a property from the config.xml to facilitate centralised management of the URL
+            <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/> 
+         -->
+        <attribute name="encrypt" value="3DES"/>
+        <attribute name="sign" value="SHA256"/>
+        <attribute name="resend_max_retries" value="3"/>
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+        <attribute name="rename_digest_to_old_name" value="false"/>
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+
+    </partnership>
+    <partnership name="Sisunet-to-Seeburger">
+        <sender name="Sisunet"/>
+        <receiver name="Seeburger"/>
+    </partnership>
+</partnerships>

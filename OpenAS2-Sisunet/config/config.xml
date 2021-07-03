@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openas2>
-	<properties storageBaseDir="%home%/../../sender/data"
+	<properties storageBaseDir="%home%/../../sisunet/data"
                log_date_format="yyyy-MM-dd HH:mm:ss.SSS"
                sql_timestamp_format="yyyy-MM-dd HH:mm:ss.SSS"
                as2_message_id_format="OPENAS2-$date.yyyy-MM-dd$:$date.HH:mm:ss$-@$msg.sender.as2_id$:$msg.receiver.as2_id$"
@@ -26,8 +26,8 @@
                module.HealthCheckModule.enabled="false"
                />
    <certificates classname="org.openas2.cert.PKCS12CertificateFactory"
-	   filename="%home%/../../certs/leo/as2_leo.p12"
-                 password="2020Myyear1#"
+	   filename="%home%/../../certs/sisunet/sisunet.p12"
+                 password="2021SisAs21!"
                  interval="300"/>
    <partnerships classname="org.openas2.partner.XMLPartnershipFactory"
                  filename="%home%/partnerships.xml"
@@ -102,23 +102,15 @@
               mimetype="application/EDI-X12"/>
       <!-- This directory polling module will is dedicated to sending to partner PartnerA_OID -->
       <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-              outboxdir="$properties.storageBaseDir$/toMinCommerce/"
-              errordir="$properties.storageBaseDir$/toMinCommerce/error/$date.YYYY$/$date.MM$"
+              outboxdir="$properties.storageBaseDir$/toSeeburger/"
+              errordir="$properties.storageBaseDir$/toSeeburger/error/$date.YYYY$/$date.MM$"
               stored_error_filename="$date.YYYY$-$date.MM$-$msg.headers.message-id$-$msg.attributes.filename$"
               sentdir="$properties.storageBaseDir$/sent/$msg.sender.as2_id$-$msg.receiver.as2_id$/$date.YYYY$/$date.MM$"
               stored_sent_filename="$msg.headers.message-id$-$msg.attributes.filename$"
               interval="5"
-              defaults="sender.as2_id=Leo, receiver.as2_id=MinCommerce"
+              defaults="sender.as2_id=SISUNET_AS2_PROD, receiver.as2_id=MSAT_AS2_PROD"
               sendfilename="true"
               mimetype="application/EDI-X12"/>
-      <!-- This directory polling module will is dedicated to sending to partner PartnerB_OID -->
-<!--      <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"-->
-<!--              outboxdir="$properties.storageBaseDir$/toPartnerB"-->
-<!--              errordir="$properties.storageBaseDir$/toPartnerB/error"-->
-<!--              interval="5"-->
-<!--              defaults="sender.as2_id=MyCompany_OID, receiver.as2_id=PartnerB_OID"-->
-<!--              sendfilename="true"-->
-<!--              mimetype="application/EDI-X12"/>-->
       <module enabled="$properties.module.DbTrackingModule.enabled$"
               classname="org.openas2.processor.msgtracking.DbTrackingModule"
               use_embedded_db="true"
