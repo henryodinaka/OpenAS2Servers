@@ -1,0 +1,33 @@
+Headers:
+Content-Type: application/EDI-X12
+Content-Length: 490314
+Date: Mon, 05 Jul 2021 17:31:07 +0100
+From: deleogold@gmail.com
+Message-ID: <OPENAS2-2021-07-05:17:31:07-@SISUNET_AS2_PROD:MSAT_AS2_PROD>
+Subject: File align.PNG sent from Sisunet to Seeburger
+Mime-Version: 1.0
+User-Agent: OpenAS2 Server v2.11.0 (AS2SenderModule)
+AS2-Version: 1.1
+Recipient-Address: https://as2.sisunet.se/seeburger
+AS2-To: MSAT_AS2_PROD
+AS2-From: SISUNET_AS2_PROD
+Disposition-Notification-To: deleogold@gmail.com
+Disposition-Notification-Options: signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, SHA256
+Content-Disposition: Attachment; filename="align.PNG"
+Accept-Encoding: gzip,deflate
+Forwarded: proto=http;host=as2.sisunet.se;for="127.0.0.1:50399"
+X-Forwarded-For: 127.0.0.1
+X-Forwarded-Proto: http
+X-Forwarded-Port: 80
+X-Forwarded-Host: as2.sisunet.se
+host: localhost:10445
+accept: */*
+transfer-encoding: chunked
+
+Attributes:
+HTTP_REQUEST_TYPE: POST
+destination_ip: /127.0.0.1
+destination_port: 10445
+HTTP_REQUEST_URL: /seeburger
+source_port: 50400
+source_ip: 127.0.0.1

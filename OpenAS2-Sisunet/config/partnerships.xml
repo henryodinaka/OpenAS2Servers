@@ -6,7 +6,7 @@
 
     <partner name="Seeburger"
              as2_id="MSAT_AS2_PROD"
-             x509_alias="seeburger_pub"
+             x509_alias="seeburger_pub_test"
              email="deleogold@gmail.com"/>
 
     <partnership name="Sisunet-to-Seeburger">
@@ -16,7 +16,10 @@
         <attribute name="content_transfer_encoding" value="binary"/>
         <attribute name="compression_type" value="ZLIB"/>
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-        <attribute name="as2_url" value="http://localhost:10085"/>
+<!--        <attribute name="as2_url" value="https://localhost:10085"/>-->
+<!--        <attribute name="as2_url" value="https://localhost:10445"/>-->
+<!--        <attribute name="as2_url" value="https://as2.sisunet.se"/>-->
+        <attribute name="as2_url" value="https://as2.sisunet.se/seeburger"/>
         <attribute name="as2_mdn_to" value="deleogold@gmail.com"/>
         <attribute name="as2_mdn_options"
                    value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
